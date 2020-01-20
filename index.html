@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Quiz</title>
+
+  <link rel="stylesheet" href="./Assets/CSS/style.css">
+
+  <style>
+  .start-btnbtn{
+    color: white;
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    font-size: large;
+  }
+  h1 {
+    background-color: green;
+    color: white;
+  }
+
+  #highscores {
+    color: blue;
+    font-size: 35px;
+
+  }
+  #timer{
+    float: right;
+    font-size: xx-large;
+    padding-right: 50px;
+  }
+  #question {
+    font-size: xx-large;
+    color: darkslateblue;
+
+  }
+  .btn {
+    height: 40px;
+    width: 80px;
+  }
+  </style>
+
+</head>
+
+<body>
+  <h1>Quiz</h1>
+
+  <div id="start">
+    <button onclick="myFunction(startQuiz)">Start Quiz</button>
+    <div id="myDIV"></div>
+  </div>
+
+  <div class="container">
+    <div id="scoretimer-container">
+      <a id="highscores" onclick="getScore()" href="#">High Scores</a>
+      <br>
+      <div id="timer">Time: 0</div>
+    </div>
+
+    <div class="quiz-container">
+      <div id="question-container" class="hide">
+        <div id= "question">Question</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <br>
+          <button class="btn">Answer 2</button>
+          <br>
+          <button class="btn">Answer 3</button>
+          <br>
+          <button class="btn">Answer 4</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src = "questions.js"></script>
+  <script src = "Assets/CSS/script.js"></script>
+  
+
+</body>
+</html>
